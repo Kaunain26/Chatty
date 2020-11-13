@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical"
+    tools:context=".activity.fragment.MessageFragment">
+
+    <ImageView
+        android:id="@+id/imgArrowBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@drawable/ic_arrow_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Message"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/search_view_background"
+        android:elevation="10dp"
+        android:focusable="false"
+        app:iconifiedByDefault="false"
+        app:queryHint="Search" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/messsage_curved_background"
+        android:elevation="10dp"
+        android:orientation="vertical">
+
+        <!--  <androidx.recyclerview.widget.RecyclerView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginTop="10dp"
+              tools:listitem="@layout/recycler_message_items"
+              android:padding="20dp" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgUserProfile"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/my_img"
+                app:shapeAppearance="@style/circular"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/imgUserProfile"
+                android:fontFamily="@font/muli_bold"
+                android:text="Kaunain Nesar"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/imgUserProfile"
+                android:maxLines="1"
+                android:text="Good Morning!!, Hey How are you"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txtName"
+                android:layout_alignParentRight="true"
+                android:layout_margin="8dp"
+                android:text="9:10 AM" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="110dp"
+            android:background="#918E8E" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgUserProfile2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/my_img"
+                app:shapeAppearance="@style/circular"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                android:id="@+id/txtName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/imgUserProfile2"
+                android:fontFamily="@font/muli_bold"
+                android:text="Kaunain Nesar"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtMsg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtName2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/imgUserProfile2"
+                android:maxLines="1"
+                android:text="Good Morning!!, Hey How are you"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txtName2"
+                android:layout_alignParentRight="true"
+                android:layout_margin="8dp"
+                android:text="9:10 AM" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="110dp"
+            android:background="#918E8E" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgUserProfile1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/my_img"
+                app:shapeAppearance="@style/circular"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                android:id="@+id/txtName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/imgUserProfile1"
+                android:fontFamily="@font/muli_bold"
+                android:text="Kaunain Nesar"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtMsg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtName1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/imgUserProfile1"
+                android:maxLines="1"
+                android:text="Good Morning!!, Hey How are you"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txtName1"
+                android:layout_alignParentRight="true"
+                android:layout_margin="8dp"
+                android:text="9:10 AM" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="110dp"
+            android:background="#918E8E" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgUserProfile3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/my_img"
+                app:shapeAppearance="@style/circular"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                android:id="@+id/txtName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/imgUserProfile3"
+                android:fontFamily="@font/muli_bold"
+                android:text="Kaunain Nesar"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtMsg3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtName3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/imgUserProfile3"
+                android:maxLines="1"
+                android:text="Good Morning!!, Hey How are you"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txtName3"
+                android:layout_alignParentRight="true"
+                android:layout_margin="8dp"
+                android:text="9:10 AM" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="110dp"
+            android:background="#918E8E" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgUserProfile4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/my_img"
+                app:shapeAppearance="@style/circular"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                android:id="@+id/txtName4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/imgUserProfile4"
+                android:fontFamily="@font/muli_bold"
+                android:text="Kaunain Nesar"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtMsg4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtName4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/imgUserProfile4"
+                android:maxLines="1"
+                android:text="Good Morning!!, Hey How are you"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txtName4"
+                android:layout_alignParentRight="true"
+                android:layout_margin="8dp"
+                android:text="9:10 AM" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="110dp"
+            android:background="#918E8E" />
+
+    </LinearLayout>
+</LinearLayout>

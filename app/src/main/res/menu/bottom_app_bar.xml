@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/ic_chat"
+        android:icon="@drawable/ic_chat"
+        android:title="Chats"
+        app:showAsAction="ifRoom">
+
+    </item>
+
+    <item
+        android:id="@+id/ic_contact"
+        android:icon="@drawable/ic_contact"
+        android:title="Contacts"
+        app:showAsAction="ifRoom">
+
+    </item>
+
+    <item
+        android:id="@+id/ic_profile"
+        android:icon="@drawable/ic_user"
+        android:title="Profile"
+        app:showAsAction="ifRoom">
+
+    </item>
+</menu>
